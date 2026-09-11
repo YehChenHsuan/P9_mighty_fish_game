@@ -1,10 +1,11 @@
 /**
- * ALICE ESL Phonics P9 - Mighty Fish 3D 海底探險題庫資料
+ * ALICE ESL Phonics P9 - 大魚吃小魚英文冒險題庫 (data.js)
  * 課本學習範圍：Page 02 - 12
- * 主題：Places Around Town, Vehicles & Special Sounds
+ * 主題：Places Around Town & Vehicles
  */
 
-const P9_FISH_QUESTIONS = [
+window.BOOK_ID = "P9";
+const FISH_QUESTIONS = [
   {
     "id": "fish-qa-1",
     "type": "QA",
@@ -19,7 +20,7 @@ const P9_FISH_QUESTIONS = [
     ],
     "correct": "Yes, we can.",
     "audioFallback": "P9_flashcards_audios/P9_library.mp3",
-    "voiceType": "speech"
+    "theme": "Places Around Town & Vehicles"
   },
   {
     "id": "fish-qa-2",
@@ -35,7 +36,7 @@ const P9_FISH_QUESTIONS = [
     ],
     "correct": "Yes, I can.",
     "audioFallback": "P9_flashcards_audios/P9_airport.mp3",
-    "voiceType": "speech"
+    "theme": "Places Around Town & Vehicles"
   },
   {
     "id": "fish-qa-3",
@@ -51,7 +52,7 @@ const P9_FISH_QUESTIONS = [
     ],
     "correct": "pharmacy",
     "audioFallback": "P9_flashcards_audios/P9_pharmacy.mp3",
-    "voiceType": "speech"
+    "theme": "Places Around Town & Vehicles"
   },
   {
     "id": "fish-qa-4",
@@ -67,7 +68,7 @@ const P9_FISH_QUESTIONS = [
     ],
     "correct": "zoo",
     "audioFallback": "P9_flashcards_audios/P9_zoo.mp3",
-    "voiceType": "speech"
+    "theme": "Places Around Town & Vehicles"
   },
   {
     "id": "fish-qa-5",
@@ -79,11 +80,11 @@ const P9_FISH_QUESTIONS = [
     "options": [
       "fire truck",
       "taxi",
-      "school bus"
+      "bus"
     ],
     "correct": "fire truck",
     "audioFallback": "P9_flashcards_audios/P9_fire truck.mp3",
-    "voiceType": "speech"
+    "theme": "Places Around Town & Vehicles"
   },
   {
     "id": "fish-qa-6",
@@ -99,21 +100,10 @@ const P9_FISH_QUESTIONS = [
     ],
     "correct": "ambulance",
     "audioFallback": "P9_flashcards_audios/P9_ambulance.mp3",
-    "voiceType": "speech"
+    "theme": "Places Around Town & Vehicles"
   }
 ];
 
 if (typeof window !== "undefined") {
-  window.P1_FISH_QUESTIONS = P9_FISH_QUESTIONS;
-  window.P9_FISH_QUESTIONS = P9_FISH_QUESTIONS;
-  window.P1_QUESTIONS_DATA = P9_FISH_QUESTIONS;
-  window.P9_QUESTIONS_DATA = P9_FISH_QUESTIONS;
-}
-
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = {
-    P1_FISH_QUESTIONS: P9_FISH_QUESTIONS,
-    P9_FISH_QUESTIONS,
-    P1_QUESTIONS_DATA: P9_FISH_QUESTIONS
-  };
+  window.FISH_QUESTIONS = FISH_QUESTIONS;
 }
