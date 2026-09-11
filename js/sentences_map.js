@@ -1,4 +1,4 @@
-{
+window.SENTENCES_AUDIO_MAP = {
   "Can we borrow books at the library?": "assets/audios/tts/fish_q_0_09b488d8.mp3",
   "Yes, we can.": "assets/audios/tts/fish_opt_c9edac14.mp3",
   "No, we can't.": "assets/audios/tts/fish_opt_2945b998.mp3",
@@ -22,4 +22,4 @@
   "ambulance": "assets/audios/tts/fish_opt_e0d0f09d.mp3",
   "tow truck": "assets/audios/tts/fish_opt_f5f9995a.mp3",
   "police car": "assets/audios/tts/fish_opt_02b13d6a.mp3"
-}
+};
